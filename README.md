@@ -1,11 +1,8 @@
-# Google Reviews Chatbot
+# Chatbot
 
-The Google Reviews Chatbot is an automated response system that fetches reviews from Google My Business, analyzes
-sentiments using OpenAI's GPT-3, and generates appropriate responses. It uses Celery for task scheduling and can be
+It uses Celery for task scheduling and can be
 deployed on AWS using Elastic Beanstalk, EC2, and ElastiCache for Redis.
 
-## Request Access Google My Business
-Click [here](https://docs.google.com/forms/d/e/1FAIpQLSfC_FKSWzbSae_5rOpgwFeIUzXUF1JCQnlsZM_gC1I2UHjA3w/viewform) to apply for access to Google My Business API.
 
 ## Installation
 
@@ -36,14 +33,3 @@ Click [here](https://docs.google.com/forms/d/e/1FAIpQLSfC_FKSWzbSae_5rOpgwFeIUzX
   ```
   celery -A celery_worker beat --loglevel=info
   ```
-
-## Dashboard for Google Reviews Chatbot
-
-The dashboard for the Google Reviews Chatbot is [Here](https://github.com/shamspias/google-review-chatbot-dashboard). It
-is built using Django Rest.
-
-## Deployment on AWS
-
-Follow the steps in the deployment guide to deploy the Google Reviews Chatbot on AWS using Elastic Beanstalk, EC2, and
-ElastiCache for Redis.
-
